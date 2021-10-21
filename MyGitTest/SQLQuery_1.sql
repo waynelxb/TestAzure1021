@@ -6,7 +6,7 @@ CREATE VIEW [SalesLT].[vProductAndDescription]
 WITH SCHEMABINDING
 AS
 -- View (indexed or standard) to display products and product descriptions by language.
-SELECT asdfds
+SELECT 
     p.[ProductID]
     ,p.[Name]
     ,pm.[Name] AS [ProductModel]
