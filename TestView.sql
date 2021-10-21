@@ -18,7 +18,7 @@ UNION ALL
     FROM SalesLT.ProductCategory AS C
     INNER JOIN CategoryCTE AS BC ON BC.ProductCategoryID = C.ParentProductCategoryID
 )
-
+--Test
 SELECT PC.[Name] AS [ParentProductCategoryName], CCTE.[Name] as [ProductCategoryName], CCTE.[ProductCategoryID]
 FROM CategoryCTE AS CCTE
 JOIN SalesLT.ProductCategory AS PC
